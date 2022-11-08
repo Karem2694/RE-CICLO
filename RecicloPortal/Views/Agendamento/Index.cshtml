@@ -1,0 +1,55 @@
+﻿@model Agendamento;
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Formulário de Inscrição</title>
+    <link href="~/css/sites.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <center>
+        <h1>Re-Ciclo</h1>
+    </center>
+    <section>
+         <div>
+        <ul>
+            <li>
+                <a href="home">Inicial</a>
+            </li>
+            <li>
+                <a href="cadastrar">Cadastro</a>
+            </li>
+            <li>
+                <a href="agendamento">Agendamento</a>
+            </li>
+            <li>
+                <a href="pontuacao">Pontuação</a>
+            </li>
+            <li>
+                <a href="material">Materiais</a>
+            </li>
+        </ul>
+    </div>
+    </section>
+
+    <center>
+        <h2>Agendamento</h2>
+    </center>
+
+    @using (Html.BeginForm("Agendar", "Agendamento", FormMethod.Post))
+    {
+        <center>
+            <label asp-for="Data">Data de Agendamento</label>
+            @Html.TextBoxFor(n => n.Data,"{0:yyyy-MM-dd}", new { type = "date", @class = "form-control", @id = "Data" })
+            <span asp-validation-for="Data"></span>
+            <br>
+            <label asp-for="CpfCnpj">Cpf/Cnpj</label>
+            @Html.TextBoxFor(n => n.CpfCnpj, new { type = "text", @class = "form-control", @id = "text" })
+            <span asp-validation-for="CpfCnpj"></span>
+            <input type="submit" value="Confirmar" id="botao" />
+        </center>
+    }
+</body>
+</html>

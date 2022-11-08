@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecicloPortal", "RecicloPortal\RecicloPortal.csproj", "{8A769BC3-BD90-4497-883E-364745234FEB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A769BC3-BD90-4497-883E-364745234FEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A769BC3-BD90-4497-883E-364745234FEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A769BC3-BD90-4497-883E-364745234FEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A769BC3-BD90-4497-883E-364745234FEB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4EAE599F-AC38-418E-981A-9F27AFDB934C}
+	EndGlobalSection
+EndGlobal

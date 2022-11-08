@@ -1,0 +1,64 @@
+﻿@model Usuario;
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Cadastro de Usuário</title>
+    <link href="sites.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <center>
+        <h1>Re-Ciclo</h1>
+    </center>
+    <section>
+        <div>
+            <ul>
+                <li>
+                    <a href="home">Inicial</a>
+                </li>
+                <li>
+                    <a href="agendamento">Agendamento</a>
+                </li>
+                <li>
+                    <a href="cupom">Cupom</a>
+                </li>
+                <li>
+                    <a href="pontuacao">Pontuação</a>
+                </li>
+                <li>
+                    <a href="resgate">Resgate de Pontos</a>
+                </li>
+                <li>
+                    <a href="material">Materiais</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <center>
+        <h2>Cadastro de Usuário</h2>
+    </center>
+    @using (Html.BeginForm("Cadastrar", "Cadastrar", FormMethod.Post)){
+        <center>
+            <label for="txt-nome">Nome</label>
+            @Html.TextBoxFor(m => m.Nome)
+            <br>
+            <label for="txt-cpf-cnpj">CPF / CNPJ</label>
+            @Html.TextBoxFor(m => m.CpfCnpj)
+            <br>
+            <label for="txt-email">Email</label>
+            @Html.TextBoxFor(m => m.Email)
+
+            <br>
+            <label for="txt-senha">Senha</label>
+            <input type="password" id="txt-senha" name="senha" />
+            <br>
+            <label for="txt-confirmar-senha">Confirmar Senha</label>
+            <input type="password" id="txt-confirmar-senha" name="senha" />
+            <br>
+            <input type="submit" value="Cadastrar" id="botao"/>
+        </center>
+        }
+</body>
+</html>
